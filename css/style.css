@@ -1,0 +1,758 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,300;0,600;1,200;1,300&family=Roboto:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Homemade+Apple&family=Oswald&family=Poppins:ital,wght@0,600;1,300&family=Roboto:ital,wght@1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+/* body{
+  display: grid;
+  place-items: center;
+} */
+.header{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgb(3,4,9,0.7),rgb(3,4,9,0.7)),url(/image/bg3.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 4%;
+}
+nav h2{
+  font-size: 2.5rem;
+  color: #fff;
+}
+nav span{
+  color: aqua;
+  font-size: 3rem;
+}
+nav .nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  
+}
+.nav-links ul li a::after{
+  content: "";
+  width: 0;
+  background:aqua;
+  height: 1px;
+  display: block;
+  margin: auto;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+.nav-links ul li a:hover::after{
+  width: 100%;
+}
+/* text-box editing */
+.text-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-40%);
+  text-align: center;
+  width: 100%;
+}
+.text-box h1{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  
+}
+.text-box .logo{
+    width: 90px;
+    height: 90px;
+    margin: 20px 20px;
+    filter: invert(1);
+    
+}
+.text-box span{
+  color: aqua;
+  font-size: 2.4rem;
+}
+.text-box p{
+  font-size: 1.1rem;
+  color: whitesmoke;
+  margin: 12px 10px;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+}
+.text-box .visit-link{
+  text-decoration: none;
+  color: #fff;
+  border: solid 2px #fff;
+  padding: 12px 34px;
+  display: inline-block;
+  position: relative;
+  background: transparent;
+  margin-top: 30px;
+  cursor: pointer;
+  
+}
+.text-box .visit-link:hover{
+  background: rgb(81, 233, 233);
+  transition: 0.5s;
+  border: 2px solid aqua;
+}
+
+
+
+
+/* menu editing */
+.menu{
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  padding-top: 100px;
+
+ padding-bottom: 100px;
+}
+#card{
+ 
+  width: 50%;
+  padding: 10px 20px;
+}
+.menu h1{
+  font-size:35px;
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: aqua;
+  margin-bottom: 5px;
+}
+.menu h2{
+  font-size:50px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+.cards img{
+  width: 200px;
+  height: 200px;
+}
+.cards h3{
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+  margin-bottom: 15px;
+}
+.cards{
+  display: flex;
+  justify-content:space-evenly !important;
+  margin-top: 5%;
+  
+  
+}
+
+p{
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(153, 145, 145);
+}
+.cbtn{
+  text-decoration: none;
+  font-size: 15px;
+  color:whitesmoke;
+  background-color: rgb(72, 170, 137);
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+.cbtn:hover{
+  background-color: rgb(83, 138, 138);
+}
+nav .fas{
+  display: none;
+}
+/* activities editing */
+
+.events{
+  width: 100%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.row{
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.container{
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+img{
+  width:100%;
+  border-radius: 10px;
+  height: 500px;
+}
+.card{
+  padding: 10px 20px;
+  
+  
+}
+.details{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: transparent;
+  height: 500px;
+  width: 100%;
+  transition:0.5s ;
+  border-radius: 10px;
+}
+.details:hover{
+  background:  rgba(117, 187, 190, 0.8);
+}
+.events h2{
+  font-size:35px;
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: aqua;
+  margin-bottom: 20px;
+}
+.events h3{
+  font-size:15px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+.events h4{
+  font-size:50px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color:black;
+}
+.row span{
+  color: aqua;
+  text-transform: lowercase;
+}
+
+.details h3{
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  font-weight: 900;
+  font-size: 15px;
+  margin-bottom: 10px;
+
+}
+.details p{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 15px;
+  color: rgb(236, 223, 223);
+  font-family: 'Poppins', sans-serif;
+
+}
+.details:hover h3{
+  bottom: 49%;
+  opacity: 1;
+}
+.details:hover p{
+  bottom: 45%;
+  opacity: 1;
+}
+/* shpping section */
+.container{
+  width: 100%;
+  padding: 50px 0;
+}
+.title{
+  width: 100%;
+  text-align: center;
+}
+.title h2{
+  font-size:35px;
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: aqua;
+  margin-bottom: 20px;
+}
+.title h1{
+  font-size:50px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color:black;
+}
+.box{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 50px;
+  width: 100%;
+  
+  
+}
+.cards-shop{
+  border: 2px solid  rgb(206, 203, 203);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 450px;
+  transition: 0.5s;
+}
+.cards-shop:hover{
+  border: 2px solid  rgb(100, 200, 209);
+}
+.image img{
+  width: 250px;
+  height: 250px;
+  margin-bottom: 40px;
+}
+.cards-shop h4{
+  color: rgb(110, 110, 110);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+.cards-shop h4:hover{
+  color:  rgb(100, 200, 209);
+}
+.cards-shop h5{
+  color: black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+ 
+}
+.cards-shop span{
+  color: black;
+  font-weight: 200;
+  font-family: font-family 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+
+/* testimonials editing */
+.testimonial{
+  width: 80%;
+  margin: auto;
+  padding: 100px 0;
+  text-align: center;
+  min-height: 80vh;
+
+  
+}
+.testimonial h2{
+  font-size:35px;
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: aqua;
+  margin-bottom: 20px;
+}
+.testimonial h1{
+  font-size:50px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color:black;
+}
+.testimonials-col{
+  flex-basis: 40%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  display: flex;
+  padding: 25px;
+  text-align: left;
+  cursor: pointer;
+  background-color: #F5EAEA;
+  margin: 10px 20px;
+}
+.testimonials-col img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 30px;
+
+}
+.testimonials-col p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: black;
+}
+.testimonial h3{
+  font-size: 20px;
+  color:black;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.row-test{
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.testimonials-col .fa{
+  color: orange;
+  margin-top:10px;
+}
+/* footer section editing */
+.footer{
+  width: 90%;
+  padding-top: 70px;
+  margin: auto;
+  position: relative;
+ 
+}
+.heading{
+  width: 90vw;
+  text-align: center;
+  padding-bottom: 50px;
+ 
+}
+.heading h3{
+  font-size:35px;
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: aqua;
+  margin-bottom: 20px;
+}
+.heading h4{
+  font-size:50px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color:black;
+} 
+.email-box{
+
+  width:550px ;
+  padding:15px 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,0%);
+  transition: 0.5s;
+  background-color: #fff;
+  border: 1px solid black;
+  margin-top: 20px;
+
+}
+.email-box input{
+  border: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px 10px;
+  outline: none;
+  width: 80%;
+  
+ 
+}
+.email-box i:hover{
+  color: rgb(93, 230, 223);
+  transform: scale(130%);
+}
+.email-box i{
+  font-size: 25px;
+   padding: 5px 10px;
+   cursor: pointer;
+   transition: 0.5s;
+}
+.about-us{
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,0%);
+  
+}
+
+.card-abt{
+  display: inline-block;
+  width: 500px;
+  padding: 5px 15px;
+  margin-right: 30px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+.card-abt h3{
+  font-size: 30px;
+  margin-bottom: 25px;
+  color:  rgb(93, 230, 223);
+}
+.card-abt p{
+  text-align: left;
+  color: black;
+  font-size: 15px;
+  
+}
+.abt1 i{
+  margin-right: 25px;
+  margin-bottom: 15px;
+  padding-top: 30px;
+  font-size: 25px;
+  color: rgb(0, 255, 242);
+  
+}
+.card-abt li{
+  list-style: none;
+}
+.abt2 li{
+  font-size: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.abt3 li{
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 5px;
+
+}
+.abt4 li{
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-bottom: 15px;
+  line-height: 25px;
+
+}
+.abt4 i{
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media screening part  */
+
+@media screen and (max-width:700px){
+    .text-box .logo{
+        width: 80px;
+        height: 80px;
+        margin-top: -12px;
+    }
+    .text-box h1{
+        font-size: 1.6rem;
+    }
+    .text-box span{
+        font-size: 1.8rem;
+    }
+    .text-box p{
+        font-size:15px;
+        letter-spacing: 0;
+        line-height: 1.5rem;
+    }
+    nav{
+        align-items: flex-start;
+    }
+    nav h2{
+        font-size: 1.5rem;
+    }
+    nav span{
+        font-size: 1.7rem;
+    }
+    .nav-links ul li{
+        display: block;
+        padding: 12px 40px;
+        font-weight: 400;
+    }
+    .nav-links ul li:hover{
+      background: rgb(174, 218, 218);
+    }
+    .nav-links{
+        position: absolute;
+        top:0;
+        right: -200px;
+        background: rgb(111, 179, 179);
+        width: 200px;
+        height: 100vh;
+        z-index: 2;
+        text-align: left !important;
+        transition: 0.5s;
+    }
+    nav .fas{
+      display: block;
+      margin: 10px;
+      font-size: 22px;
+      color: #fff;
+      cursor: pointer;
+    }
+    .nav-links ul li a::after{
+      display: none;
+    }
+
+    /* menu */
+    .cards{
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .cards img{
+      width: 170px;
+      height: 170px;
+    }
+    .menu h2{
+      font-size: 35px;
+    }
+    #card{
+      margin-bottom: 20px;
+    }
+    .menu{
+      padding-top: 50px;
+    }
+    .cards h3{
+      font-size: 23px;
+    }
+
+    /* acctivities */
+    .row{
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    .events h4{
+      font-size: 35px;
+    }
+    .events img{
+      height: 300px;
+    }
+    .details:hover h3{
+      bottom:59%;
+      opacity: 1;
+    }
+    .details p{
+      font-size: 12px;
+    }
+    .details{
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background: transparent;
+      height: 300px;
+      width: 100%;
+      transition:0.5s ;
+      border-radius: 10px;
+      
+    }
+    .card h3{
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    .card2 p{
+      margin-top: 5px;
+    }
+
+
+    /* shopping section */
+    .box{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .box h4{
+      font-size: 15px;
+    }
+    .image img{
+      width: 200px;
+      height: 200px;
+    }
+    .title h1{
+      font-size: 35px;
+    }
+    .cards-shop{
+      height: 380px;
+    }
+
+    /* testimonials part */
+    .row-test{
+      display: flex;
+      flex-direction: column;
+    }
+    .testimonials-col{
+      flex-basis: 40%;
+      border-radius: 10px;
+      margin-bottom: 5%;
+      display: flex;
+      padding: 25px;
+      text-align: center;
+      cursor: pointer;
+      background-color: #F5EAEA;
+      margin: 10px 20px;
+      flex-direction: column;
+    }
+    .testimonials-col img{
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+      margin-left: 60px;
+    }
+    .testimonial h1{
+      font-size: 35px;
+  }
+
+
+
+  /* footer section */
+  .about-us{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .about-us .card-abt{
+    display: inline-block;
+    width:90%;
+    padding: 0;
+  }
+  .email-box{
+    display: inline-block;
+    width: 90%;
+  }
+  .email-box input{
+    display: inline-block;
+    width: 150px;
+    
+  }
+  .email-box i{
+    margin-left: 30px;
+  }
+  .heading h4{
+    font-size: 30px;
+  }
+}
