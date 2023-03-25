@@ -596,7 +596,7 @@ img{
       background: rgb(174, 218, 218);
     }
     .nav-links{
-        position: absolute;
+        position:fixed;
         top:0;
         right: -200px;
         background: rgb(111, 179, 179);
